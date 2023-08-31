@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기-controller</title>
+</head>
+<style>
+	
+	input, select, option {
+		font-size : 40px;
+	}
+
+</style>
+<body>
+   <h2>계산기-controller</h2>
+   <hr>
+   <form method="post" action="/jwbook/calcControl" >
+      <input type="text" name="n1" size="10">
+      <select name="op">
+         <option>+</option>
+         <option>-</option>
+         <option>*</option>
+         <option>/</option>
+      </select>
+      <input type="text" name="n2" size="10">
+      <input type="submit" value="=">
+   </form>
+</body>
+</html>
