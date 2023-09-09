@@ -24,11 +24,13 @@ public class ProductService {
 	}
 	
 	
+	//Porduct 형식의 객체를 list로 리턴함
+	//list는 products 맵의 값들만 데이터로 받아 생성
 	public List<Product> findAll() {
 		return new ArrayList<>(products.values());
 	}
 	
 	public Product find(String id) {
-		return products.get(id);
+		return products.get(id); //주어진 키(id)를 받아 해당 값만 리턴
 	}
 }

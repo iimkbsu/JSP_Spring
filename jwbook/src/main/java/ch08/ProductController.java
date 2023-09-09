@@ -53,7 +53,7 @@ public class ProductController extends HttpServlet {
     }
     
 
-private String info(HttpServletRequest request, HttpServletResponse response) {
+    private String info(HttpServletRequest request, HttpServletResponse response) {
     	
     	request.setAttribute("p", service.find(request.getParameter("id")));
     	return "productInfo.jsp";
